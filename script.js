@@ -61,3 +61,16 @@ gsap.to(".pr, .ae",{
     ease: "none",
     yoyo:true,
 })
+gsap.to(".marque",{
+    transform: "translateX(-100%)",
+    duration: 10,
+    ease: "none",
+    repeat: -1,
+})
+gsap.to("#man",{
+    y:2,
+    ease: "none",
+    repeat: -1,
+    yoyo: true,
+    duration:2,
+})

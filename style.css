@@ -3,11 +3,11 @@
 * {
   margin: 0;
   padding: 0;
-  
 }
 body {
-  background-color: #111;
+  background-color: black;
   overflow-x: hidden !important;
+  font-family: 'Exo';
 }
 header {
   height: 130px;
@@ -47,11 +47,11 @@ header {
   font-size: 16px;
   font-family: "Orbitron";
 }
-.nav-item{
-    transition: .3s;
+.nav-item {
+  transition: 0.3s;
 }
-.nav-item:hover{
-    color: #6F00A9;
+.nav-item:hover {
+  color: #6f00a9;
 }
 .icons {
   height: 50px;
@@ -66,13 +66,14 @@ header {
   font-size: 20px;
   color: white;
   cursor: pointer;
+  transition: .3s;
 }
-.icons i:hover{
-    color: #6F00A9;
+.icons i:hover {
+  color: #6f00a9;
 }
-#menu {
+#mob-icons {
   display: none;
-  color: white;
+  /* color: white; */
 }
 .side-menu {
   display: none;
@@ -88,96 +89,126 @@ header {
   flex-direction: row;
   align-items: center;
 }
-.left-text{
-    height: 80%;
-    width: 45%;
-    /* background: #f73939; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
+.left-text {
+  height: 80%;
+  width: 45%;
+  /* background: #f73939; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
 }
-.left-text .jimmy{
-    text-transform: uppercase;
-    color: white;
-    font-family: 'Exo';
-    font-weight: 500;
-    font-size: 20px;
-    padding: 10px 0px;
-    width: 150px;
-    background: url(./assets/Line.png) no-repeat bottom;
+.left-text .jimmy {
+  text-transform: uppercase;
+  color: white;
+  font-family: "Exo";
+  font-weight: 500;
+  font-size: 20px;
+  padding: 10px 0px;
+  width: 150px;
+  background: url(./assets/Line.png) no-repeat bottom;
 }
-.left-text h1{
-    color: white;
-    text-transform: uppercase;
-    font-family: 'Exo 2';
-    font-size: 5.5vw;
+.left-text h1 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Exo 2";
+  font-size: 5.5vw;
 }
-.left-text p{
-    font-size: 20px;
-    font-family: 'Exo';
-    color: white;
-    margin-top: 10px;
+.left-text p {
+  font-size: 20px;
+  font-family: "Exo";
+  color: white;
+  margin-top: 10px;
 }
-.left-text .hero-btn{
-    height: 50px;
-    width: 250px;
-    border: none;
-    font-family: 'Orbitron';
-    color: white;
-    background-color: #6F00A9;
-    margin-top: 10px;
-    cursor: pointer;
-    font-weight: 500;
-    transition: .3s;
+.left-text .hero-btn {
+  height: 50px;
+  width: 250px;
+  border: none;
+  font-family: "Orbitron";
+  color: white;
+  background-color: #6f00a9;
+  margin-top: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
 }
-.hero-btn:hover{
-    background-color: black;
-    color: #6F00A9;
-    border: 1px solid #6F00A9;
+.hero-btn:hover {
+  background-color: black;
+  color: #6f00a9;
+  border: 1px solid #6f00a9;
 }
-.right-cont{
-    height: 100%;
-    width: 42%;
-    display: flex;
-    justify-content: center;
-    align-items: end;
-    /* background-color: aliceblue; */
+.right-cont {
+  height: 100%;
+  width: 42%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  /* background-color: aliceblue; */
 }
-.man{
-    width: 350px;
+.man {
+  width: 350px;
 }
-.current1{
-    position: absolute;
-    right: -2px;
-    width: 280px;
+.current1 {
+  position: absolute;
+  right: -2px;
+  width: 280px;
 }
-.current2{
-    position: absolute;
-     right: 30%;
-    width: 280px;
+.current2 {
+  position: absolute;
+  right: 30%;
+  width: 280px;
 }
-.ae{
-    position: absolute;
-    top: 38%;
-    right: 5%;
+.ae {
+  position: absolute;
+  top: 38%;
+  right: 5%;
 }
-.pr{
-    position: absolute;
-    top: 30%;
-    right:37%;
+.pr {
+  position: absolute;
+  top: 30%;
+  right: 37%;
 }
 .about {
-    height: 500px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  /* background-color: blanchedalmond; */
+}
+.abt-head{
+  /* background-color: aqua; */
+  padding: 16px 50px;
+  background: url(./assets/Line2.png) no-repeat;
+  background-position: bottom;
+}
+.abt-head h1{
+  font-size: 5vw;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Exo";
+}
+.marque {
+  display: none;
+}
+.abt-cont{
+  height: 40%;
+  width: 70%;
+  /* background-color:/ aliceblue; */
+  text-align: center;
+  color: white;
+  font-size: 18px;
 }
 @media screen and (max-width: 600px) and (min-width: 340px) {
-  body {
-    /* height: 80vh; */
-    width: 100%;
-    background-color: #111;
-  }
-  header{
+  header {
     height: 90px;
+    justify-content: center;
+    gap: 90px;
+  }
+  .navBar{
+    /* background-color: aliceblue; */
+    width: auto;
   }
   .navlinks {
     display: none;
@@ -188,11 +219,20 @@ header {
   .logo {
     font-size: 18px;
   }
-  #menu {
-    display: inline-block;
+  #mob-icons {
+    /* height: 40px; */
+    /* background-color: antiquewhite; */
+    display: flex;
+    gap: 10px;
     color: white;
     font-size: 20px;
     cursor: pointer;
+  }
+  #mob-icons i {
+    transition: .3s;
+  }
+  #mob-icons i:hover{
+    color: #6f00a9;
   }
   .side-menu {
     display: flex;
@@ -224,59 +264,101 @@ header {
     top: 4%;
     right: 10%;
   }
-  .hero{
+  .hero {
     background: black;
     flex-direction: column;
     justify-content: start;
-    gap: 60px;
+    gap: 10px;
     /* height: 1000px; */
+    /* margin-bottom: -20px; */
   }
-  .left-text{
+  .left-text {
     width: 90%;
     height: 40%;
     /* background-color: aquamarine; */
   }
-  .left-text .jimmy{
+  .left-text .jimmy {
     font-size: 14px;
     width: 100px;
   }
-  .left-text h1{
+  .left-text h1 {
     font-size: 8vw;
   }
-  .left-text p{
+  .left-text p {
     font-size: 12px;
   }
-  .left-text .hero-btn{
+  .left-text .hero-btn {
     height: 40px;
     width: 150px;
     font-size: 12px;
   }
-  .right-cont{
-    background: url(./assets/bgimage.png) no-repeat;
+  .right-cont {
+    background: url(./assets/mob-bg.png) no-repeat;
     background-size: cover;
     /* background-color: aliceblue; */
     /* height: 600px; */
     height: 50%;
     width: 100%;
   }
-  .current1{
+  .current1 {
     display: none;
   }
-  .current2{
+  .current2 {
     width: 130px !important;
     top: 28%;
-    right: 1%;
+    right: 0;
   }
-  .ae{
+  .ae {
     top: 18%;
     width: 50px;
   }
-  .pr{
+  .pr {
     top: 16%;
     right: 18%;
     width: 70px;
   }
-  .man{
+  .man {
     width: 200px;
+  }
+  .slider {
+    width: 100%;
+    height: 42px;
+    /* background-color: aliceblue; */
+    /* margin-top: 20px; */
+    display: flex;
+    overflow-x: hidden;
+    align-items: center;
+  }
+  .marque {
+    display: flex;
+    height: 30px;
+    /* overflow-x: hidden; */
+    /* width: 100%; */
+    align-items: center;
+    /* background-color: aqua; */
+    /* margin-top: 20px; */
+    gap: 20px;
+    transform: translateX(52%);
+  }
+  .mark {
+    gap: 13px;
+    display: flex;
+    text-wrap: nowrap;
+    font-family: "Orbitron";
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+    align-items: center;
+  }
+  .about{
+    background-color: aqua;
+    height: 300px;
+    justify-content: start;
+  }
+  .abt-head h1{
+    font-size: 9vw;
+  }
+  .abt-head{
+    background: url(./assets/Line.png) no-repeat bottom;
   }
 }
