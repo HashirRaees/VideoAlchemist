@@ -9,17 +9,21 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
       <nav class="navBar">
         <h1 class="logo">VideoAlchemist</h1>
         <ul class="navlinks">
-          <a href=""><li class="nav-item">Home</li></a>
-          <a href=""><li class="nav-item">About</li></a>
-          <a href=""><li class="nav-item">Portfolio</li></a>
-          <a href=""><li class="nav-item">Testimonials</li></a>
-          <a href=""><li class="nav-item">Contact</li></a>
+          <a href="/"><li class="nav-item">Home</li></a>
+          <a href="#about"><li class="nav-item">About</li></a>
+          <a href="#portfolio"><li class="nav-item">Portfolio</li></a>
+          <a href="#testimonials"><li class="nav-item">Testimonials</li></a>
+          <a href="#contact"><li class="nav-item">Contact</li></a>
         </ul>
         <div class="icons">
           <i class="ri-facebook-box-fill"></i>
@@ -97,7 +101,7 @@
     </main>
 
     <!-- About section -->
-    <main class="about">
+    <main id="about" class="about">
       <div class="abt-head">
         <h1>About me</h1>
       </div>
@@ -109,7 +113,52 @@
           transform ordinary footage into extraordinary visual experiences.
         </p>
       </div>
+      <div id="mob-icons">
+        <i class="ri-facebook-box-fill"></i>
+        <i class="ri-linkedin-box-fill"></i>
+        <i class="ri-youtube-fill"></i>
+      </div>
+      <div class="desk-slider">
+        <div class="marque2">
+          <h4 class="mark">Cash Cow Editing</h4>
+          <img src="./assets/Ellipse 7.png" alt="" />
+          <h4 class="mark">Reels Editing</h4>
+          <img src="./assets/Ellipse 7.png" alt="" />
+          <h4 class="mark">Logo Animation</h4>
+          <img src="./assets/Ellipse 7.png" alt="" />
+          <h4 class="mark">Podcast Edit</h4>
+          <img src="./assets/Ellipse 7.png" alt="" />
+        </div>
+      </div>
     </main>
+    <!-- Best Edits section -->
+    <main id="portfolio" class="edits">
+      <div class="edit-head">
+        <h1>My Best edits</h1>
+      </div>
+      <div class="edit-cont">
+        <div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    ...
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+      </div>    
+    </main>
+
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
@@ -123,6 +172,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

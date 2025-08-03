@@ -24,7 +24,6 @@ var herotl = gsap.timeline();
 //   tl.reverse();
 // });
 
-
 herotl.from(".jimmy", {
   y: 20,
   duration: 0.8,
@@ -74,3 +73,55 @@ gsap.to("#man",{
     yoyo: true,
     duration:2,
 })
+gsap.from(".abt-head",{
+    opacity:0,
+    duration: .7,
+    y: 20,
+    scrollTrigger:{
+        scroller: "body",
+        trigger: ".abt-head",
+        // markers: true,
+        start: "top 63%"
+    }
+});
+gsap.from(".abt-cont p",{
+    opacity:0,
+    duration: .7,
+    delay:.4,
+    y: 20,
+    scrollTrigger:{
+        scroller: "body",
+        trigger: ".abt-head",
+        // markers: true,
+        start: "top 63%"
+    }
+});
+gsap.to(".marque2",{
+    transform: "translateX(-100%)",
+    duration: 10,
+    ease: "none",
+    repeat: -1,
+})
+
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
