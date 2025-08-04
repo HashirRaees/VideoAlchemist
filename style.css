@@ -262,9 +262,32 @@ header {
   background-position: bottom;
 }
 .edit-cont{
+  display: flex;
   height: 55%;
   width: 85%;
-  background-color: aliceblue;
+  justify-content: space-between;
+  gap: 30px !important;
+  /* overflow-x: hidden; */
+  align-items: center;
+  /* flex-wrap: nowrap; */
+ /* background-color: aliceblue; */
+}
+.slick-track{
+   display: flex !important;
+   gap: 30px !important;
+}
+.slick-slide{
+  height: 280px !important;
+  background-color: #6e00a960 !important;
+  backdrop-filter: blur(10px) !important;
+  border-radius: 30px !important;
+  width: 270px !important;
+}
+.slick-slider{
+  display: flex !important;
+}
+.slick-prev,.slick-next{
+  display: none !important;
 }
 @media screen and (max-width: 600px) and (min-width: 340px) {
   header {
@@ -437,7 +460,7 @@ header {
     display: none;
   }
   .edits {
-    height: 300px;
+    height: 370px;
     width: 100%;
     /* justify-content: start; */
   }
@@ -447,4 +470,19 @@ header {
   .edit-head h1 {
     font-size: 7vw;
   }
+  .edit-cont{
+    height: 180px;
+    align-items: start;
+  }
+  .slick-slide{
+  height: 180px !important;
+  width: 300px !important;
+}
+.slick-track{
+   display: flex !important;
+   gap:10px !important;
+}
+.edit-cont{
+  width: 90%;
+}
 }
