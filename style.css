@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
 }
-html{
+html {
   scroll-behavior: smooth;
 }
 body {
@@ -41,7 +41,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 50px;
+  gap: 70px;
   list-style-type: none;
 }
 .navlinks a {
@@ -261,33 +261,163 @@ header {
   background: url(./assets/Line2.png) no-repeat;
   background-position: bottom;
 }
-.edit-cont{
+.edit-cont {
   display: flex;
   height: 55%;
-  width: 85%;
+  width: 88%;
   justify-content: space-between;
   gap: 30px !important;
   /* overflow-x: hidden; */
   align-items: center;
   /* flex-wrap: nowrap; */
- /* background-color: aliceblue; */
+  /* background-color: aliceblue; */
 }
-.slick-track{
-   display: flex !important;
-   gap: 30px !important;
+.slick-track {
+  display: flex !important;
+  gap: 30px !important;
 }
-.slick-slide{
+.slick-slide,
+iframe {
   height: 280px !important;
   background-color: #6e00a960 !important;
   backdrop-filter: blur(10px) !important;
   border-radius: 30px !important;
   width: 270px !important;
 }
-.slick-slider{
+.slick-slider {
   display: flex !important;
 }
-.slick-prev,.slick-next{
+.slick-prev,
+.slick-next {
   display: none !important;
+}
+.seperator {
+  height: 40px;
+  width: 100%;
+  background: url(./assets/Separator.png) no-repeat;
+  background-size: cover;
+  margin-top: 70px;
+  margin-bottom: 120px;
+}
+.contact {
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  gap: 30px;
+  /* background-color: blanchedalmond; */
+}
+.cont {
+  /* background-color: aqua; */
+  width: 70%;
+  height: 90%;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.cont-head {
+  display: flex;
+  justify-content: start;
+  width: 90%;
+  flex-direction: column;
+  gap: 30px;
+  /* background-color: aliceblue; */
+  padding: 16px 0px;
+}
+.cont-head h1 {
+  font-size: 4.2vw;
+  text-transform: uppercase;
+  color: white;
+  font-family: "Exo";
+  background: url(./assets/Line2.png);
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+.top-btn {
+  display: flex;
+  height: 70%;
+  gap: 10px;
+  width: 20%;
+  justify-content: center;
+  align-items: end;
+  /* background-color: #6e00a960; */
+}
+.top-btn h1{
+  color: white;
+  font-weight: 500;
+}
+.top-btn i{
+  font-size: 35px;
+  color: #6f00a9;
+  cursor: pointer;
+}
+.top-btn a{
+   transition: .3s;
+  text-decoration: none;
+}
+.top-btn a:hover{
+  transform: rotate(180deg);
+}
+.message {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: blue; */
+}
+.message label {
+  color: white;
+}
+.message input {
+  padding: 15px 10px;
+  border: 1px solid gray;
+  background-color: transparent;
+  color: gray;
+}
+.message button {
+  padding: 15px 50px;
+  font-family: "Orbitron";
+  color: white;
+  font-weight: 500;
+  border: none;
+  transition: .3s;
+  background-color: #6f00a9;
+  cursor: pointer;
+}
+.message button:hover{
+  background-color: black;
+  color: #6f00a9;
+  border: 1px solid #6f00a9;
+}
+.connect {
+  height: 60px;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  /* gap: 20px; */
+  justify-content: space-between;
+  /* background-color: cadetblue; */
+}
+.phone i {
+  font-size: 40px;
+  color: #6f00a9;
+}
+.phone {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+.phone h4 {
+  font-size: 20px;
+  font-weight: 400;
+  color: white;
+}
+.conn-head{
+  display: none;
 }
 @media screen and (max-width: 600px) and (min-width: 340px) {
   header {
@@ -470,19 +600,78 @@ header {
   .edit-head h1 {
     font-size: 7vw;
   }
-  .edit-cont{
+  .edit-cont {
     height: 180px;
     align-items: start;
   }
-  .slick-slide{
-  height: 180px !important;
-  width: 300px !important;
-}
-.slick-track{
-   display: flex !important;
-   gap:10px !important;
-}
-.edit-cont{
-  width: 90%;
-}
+  .slick-slide {
+    height: 180px !important;
+    width: 300px !important;
+  }
+  .slick-track {
+    display: flex !important;
+    gap: 10px !important;
+  }
+  .edit-cont {
+    width: 90%;
+  }
+  .seperator {
+    height: 15px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+  .contact {
+    height: 640px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .cont {
+    height: 90%;
+    width: 90%;
+    align-items: center;
+  }
+  .top-btn {
+    display: none;
+  }
+  .cont-head h1 {
+    text-align: center;
+    font-size: 7vw;
+  }
+  .cont-head {
+    gap: 20px;
+  }
+  .message {
+    flex-direction: column;
+    height: 270px;
+    align-items: center;
+  }
+  .connect {
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    height: 200px;
+    gap: 20px;
+  }
+  .phone i {
+    font-size: 20px;
+  }
+  .phone h4 {
+    font-size: 15px;
+  }
+  .conn-head {
+    display: flex;
+    justify-content: start;
+    width: 85%;
+    /* background-color: aliceblue; */
+    padding: 16px 0px;
+  }
+  .conn-head h1 {
+    font-size: 7vw;
+    text-transform: uppercase;
+    color: white;
+    font-family: "Exo";
+    background: url(./assets/Line2.png) no-repeat;
+    background-position: bottom;
+  }
 }
