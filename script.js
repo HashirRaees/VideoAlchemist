@@ -113,6 +113,28 @@ gsap.from(".edit-head",{
         start: "top 63%"
     }
 });
+gsap.from(".cont-head h1",{
+    opacity:0,
+    duration: .7,
+    y: 20,
+    scrollTrigger:{
+        scroller: "body",
+        trigger: ".cont-head",
+        // markers: true,
+        start: "top 63%"
+    }
+});
+gsap.from(".conn-head",{
+    opacity:0,
+    duration: .7,
+    y: 20,
+    scrollTrigger:{
+        scroller: "body",
+        trigger: ".conn-head",
+        // markers: true,
+        start: "top 73%"
+    }
+});
 
 // slider script
 
