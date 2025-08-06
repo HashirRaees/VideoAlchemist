@@ -8,6 +8,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
+  pointer-events: all;
   background-color: black;
   overflow-x: hidden !important;
   font-family: "Exo";
@@ -408,7 +409,8 @@ header {
 }
 .phone {
   display: flex;
-  gap: 14px;
+  gap: 8px;
+  /* background-color: aliceblue; */
   align-items: center;
 }
 .phone h4 {
